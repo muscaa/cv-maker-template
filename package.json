@@ -1,0 +1,18 @@
+{
+    "name": "cv-maker-musca-template",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "node ./scripts/build_script.js"
+    },
+    "devDependencies": {
+        "@types/archiver": "^6.0.2",
+        "@types/blob-stream": "^0.1.33",
+        "@types/pdfkit": "^0.13.5",
+        "archiver": "^7.0.1",
+        "ts-loader": "^9.5.1",
+        "tsconfig-paths-webpack-plugin": "^4.1.0",
+        "typescript": "^5.6.2",
+        "webpack": "^5.95.0"
+    }
+}
