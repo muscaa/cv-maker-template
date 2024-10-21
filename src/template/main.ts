@@ -1,8 +1,12 @@
 import { cvmaker } from "@/api/CVMaker";
 
+import { MainUI } from "./ui";
+
 async function main() {
     await cvmaker.addScript({ src: 'https://github.com/devongovett/blob-stream/releases/download/v0.1.3/blob-stream.js' });
     await cvmaker.addScript({ src: 'https://github.com/foliojs/pdfkit/releases/download/v0.15.0/pdfkit.standalone.js' });
+
+    cvmaker.setUI(new MainUI());
 
     const doc = new window.PDFDocument();
     const stream = doc.pipe(window.blobStream());
